@@ -33,7 +33,7 @@ def get_saturated_contours(image):
         if m["m00"] > 0:
             cx = int(m["m10"] / m["m00"])
             cy = int(m["m01"] / m["m00"])
-            colour = hsv[cx, cy]
+            colour = hsv[cy, cx]
     return masked, contours, colour
 
 
