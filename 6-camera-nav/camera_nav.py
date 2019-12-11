@@ -1,5 +1,5 @@
 import gpiozero
-from camera_setup import setup_camera
+from find_contours import setup_camera
 from find_contours import get_saturated_contours
 
 robot = gpiozero.Robot(left=(27, 17), right=(24, 23))
